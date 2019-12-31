@@ -94,7 +94,7 @@ a{
   
   .fa-times{
     color: white;
-    font-size: 3em;
+    font-size: 1.5em;
     position: absolute;
     top: 5%;
     right: 10%;
@@ -103,7 +103,7 @@ a{
   a{
     color: white;
     margin-bottom: 2em;
-    font-size: 3em;
+    font-size: 1.5em;
     
     &:active{
       text-decoration: underline;
@@ -223,7 +223,6 @@ header{
     .nav-right{
       justify-content: space-between;
       align-items: center;
-      width: 100%;
       
       @media #{$mq-medium}{
         width: 60%;
@@ -231,7 +230,7 @@ header{
 
       a{
         color:white;
-        padding: 1em;
+        padding: 1em .5em;
         transition: .5s;
         
         &:hover{
