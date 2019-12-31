@@ -1,6 +1,13 @@
 # Peexoo Calendar Page
 
-![screenshot]()
+![screenshot](https://github.com/Oluwadamilareolusakin/peexoo-calendar/blob/master/screenshots/Screenshot%20from%202019-12-31%2002-54-22.png)
+![screenshot](https://github.com/Oluwadamilareolusakin/peexoo-calendar/blob/master/screenshots/Screenshot%20from%202019-12-31%2002-54-28.png)
+![screenshot](https://github.com/Oluwadamilareolusakin/peexoo-calendar/blob/master/screenshots/Screenshot%20from%202019-12-31%2002-54-41.png)
+![screenshot](https://github.com/Oluwadamilareolusakin/peexoo-calendar/blob/master/screenshots/Screenshot%20from%202019-12-31%2002-54-44.png)
+![screenshot](https://github.com/Oluwadamilareolusakin/peexoo-calendar/blob/master/screenshots/Screenshot%20from%202019-12-31%2002-54-49.png)
+![screenshot](https://github.com/Oluwadamilareolusakin/peexoo-calendar/blob/master/screenshots/Screenshot%20from%202019-12-31%2002-54-53.png)
+![screenshot](https://github.com/Oluwadamilareolusakin/peexoo-calendar/blob/master/screenshots/Screenshot%20from%202019-12-31%2002-54-57.png)
+
 
 # What it does
 It is the frontend of a page that allows you contact or book a photographer's time.
