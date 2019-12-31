@@ -223,6 +223,7 @@ header{
     .nav-right{
       justify-content: space-between;
       align-items: center;
+      width: 100%;
       
       @media #{$mq-medium}{
         width: 60%;
