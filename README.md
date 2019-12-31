@@ -20,7 +20,7 @@ It is the frontend of a page that allows you contact or book a photographer's ti
 
 ## Live Demo
 
-[Live Demo](https://raw.githack.com/Oluwadamilareolusakin/javascript-to-do-list/list/dist/index.html)
+[Live Demo](https://peexoo-calendar.herokuapp.com)
 
 ## Getting Started
 
