@@ -1,6 +1,7 @@
 on:
   pull_request_review:
     types: [submitted]
+if: github.event.review.state == 'approved'
 jobs:
   ready-for-merge-labeling-job:
     runs-on: ubuntu-latest
