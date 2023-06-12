@@ -9,7 +9,7 @@ jobs:
       pull-requests: write
     steps:
       - id: ready-for-merge
-        uses: nikasulo/pr-labeler@v1.1
+        uses: nikasulo/pr-labeler@v1
         with:
           action-type: approved
           repo-token: ${{ secrets.GITHUB_TOKEN }}
