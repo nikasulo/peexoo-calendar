@@ -1,16 +1,15 @@
 on:
-  pull_request_review:
-    types: [submitted]
-if: github.event.review.state == 'approved'
+  pull_request:
+    types: [ready_for_review]
 jobs:
-  ready-for-merge-labeling-job:
+  ready-for-review-labeling-job:
     runs-on: ubuntu-latest
-    name: A job to label a pull request as ready-for-merge
+    name: A job to label a pull request as ready-for-review
     permissions:
       pull-requests: write
     steps:
-      - name: Label as ready for merge
-        id: ready-for-merge
+      - name: Label as ready for review
+        id: ready-for-review
         uses: nikasulo/pr-labeler@v1
         with:
           action-type: APPROVED
