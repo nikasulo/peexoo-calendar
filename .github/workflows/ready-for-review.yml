@@ -4,7 +4,8 @@ on:
 jobs:
   ready-for-review-labeling-job:
     runs-on: ubuntu-latest
-    name: A job to label a pull request as ready-for-review
+    name: Label as ready for review
+    description: A job to label a pull request as ready-for-review
     steps:
       - name: Label as ready for review
         id: ready-for-review
