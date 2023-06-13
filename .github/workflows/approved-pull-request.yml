@@ -3,7 +3,7 @@ on:
     types: [submitted]
 jobs:
   ready-for-merge-labeling-job:
-    if: github.event.pull_request_review.review.state == 'approved'
+    # if: github.event.pull_request_review.review.state == 'approved'
     runs-on: ubuntu-latest
     name: A job to label a pull request as ready-for-merge
     steps:
@@ -13,5 +13,5 @@ jobs:
         with:
           action-type: APPROVED
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          pr-author: ${{ github.event.pull_request.user.login }}
+          pr-author: ${{ github.event.pull_request_review.review.state }}
           pr-number: ${{ github.event.pull_request.number }}
