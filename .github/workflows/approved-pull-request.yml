@@ -6,7 +6,6 @@ jobs:
     if: github.event.review.state == 'approved'
     runs-on: ubuntu-latest
     name: Label as ready for merge
-    description: A job to label a pull request as ready-for-merge
     steps:
       - name: Label as ready for merge
         id: ready-for-merge
