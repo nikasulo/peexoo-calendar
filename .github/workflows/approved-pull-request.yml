@@ -1,0 +1,17 @@
+on:
+  pull_request_review:
+    types: [submitted]
+jobs:
+  ready-for-merge-labeling-job:
+    if: github.event.review.state == 'approved'
+    runs-on: ubuntu-latest
+    name: Label as ready for merge
+    steps:
+      - name: Label as ready for merge
+        id: ready-for-merge
+        uses: nikasulo/pr-labeler@v1
+        with:
+          action-type: APPROVED
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          pr-author: ${{ github.event.pull_request.user.login }}
+          pr-number: ${{ github.event.pull_request.number }}
