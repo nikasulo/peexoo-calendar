@@ -1,0 +1,16 @@
+on:
+  pull_request:
+    types: [converted_to_draft]
+jobs:
+  ready-for-review-labeling-job:
+    runs-on: ubuntu-latest
+    name: Convert to draft
+    steps:
+      - name: Convert to draft
+        id: convert-to-draft
+        uses: nikasulo/pr-labeler@v1
+        with:
+          action-type: CONVERTED_TO_DRAFT
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          pr-author: ${{ github.event.pull_request.user.login }}
+          pr-number: ${{ github.event.pull_request.number }}
